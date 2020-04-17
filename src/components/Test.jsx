@@ -22,6 +22,8 @@ export default {
         return (
             <div style='height:50px;width:300px'>
 
+
+
                 <component is={this.componentName}/>
 
                 <component {...this.prop}/>
@@ -30,6 +32,8 @@ export default {
                     <button onClick={() => this.componentName = 'child-a'}>组件A</button>
                     <button onClick={() => this.componentName = 'child-b'}>组件B</button>
                 </div>
+
+                <ChildA text={'sdfdsf'}/>
             </div>
         )
     }
